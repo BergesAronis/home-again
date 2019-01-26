@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
 	Rigidbody2D rb;
 	CircleCollider2D cc;
 	SpriteRenderer sr;
-	//AnimationController anim;
+	Animator anim;
 
 
 	void Awake()
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
 		// Get references to our components
 		rb = GetComponent<Rigidbody2D>();
 		cc = GetComponent<CircleCollider2D>();
-		//anim = GetComponenet<AnimationController>();
+		anim = GetComponent<Animator>();
 	}
 
     // Start is called before the first frame update
@@ -42,7 +43,10 @@ public class PlayerController : MonoBehaviour
 			MoveHorizontal(Input.GetAxis("Horizontal")); //		
 			MoveVertical(Input.GetAxis("Vertical")); //
 		//}
-
+        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        {
+            anim.SetBool("Moving", false);
+        }
     }
 
 	void MoveHorizontal(float input)
@@ -51,7 +55,23 @@ public class PlayerController : MonoBehaviour
 		moveVel.x = input * speed * Time.deltaTime; //Set the new x velocity to be the given input times our speed
 		//Note the multiply by Time.deltaTime to compensate for game clock//
 		rb.velocity = moveVel;//Update our rigidbody's velocity
-	}
+        if (input > 0 && !(anim.GetBool("FaceRight")))
+        {
+            anim.SetBool("FaceRight", true);
+            anim.SetBool("FaceLeft", false);
+            anim.SetBool("FaceUp", false);
+            anim.SetBool("FaceDown", false);
+            anim.SetBool("Moving", true);
+        }
+        else if (input < 0 && !(anim.GetBool("FaceLeft")))
+        {
+            anim.SetBool("FaceLeft", true);
+            anim.SetBool("FaceRight", false);
+            anim.SetBool("FaceUp", false);
+            anim.SetBool("FaceDown", false);
+            anim.SetBool("Moving", true);
+        }
+    }
 
 	void MoveVertical(float input)
 	{
@@ -59,6 +79,22 @@ public class PlayerController : MonoBehaviour
 		moveVel.y = input * speed * Time.deltaTime; //Set the new x velocity to be the given input times our speed
 		//Note the multiply by Time.deltaTime to compensate for game clock
 		rb.velocity = moveVel;//Update our rigidbody's velocity
-	}
+        if (input > 0 && !(anim.GetBool("FaceUp")))
+        {
+            anim.SetBool("FaceUp", true);
+            anim.SetBool("FaceDown", false);
+            anim.SetBool("FaceLeft", false);
+            anim.SetBool("FaceRight", false);
+            anim.SetBool("Moving", true);
+        }
+        else if (input < 0 && !(anim.GetBool("FaceDown")))
+        {
+            anim.SetBool("FaceDown", true);
+            anim.SetBool("FaceUp", false);
+            anim.SetBool("FaceLeft", false);
+            anim.SetBool("FaceRight", false);
+            anim.SetBool("Moving", true);
+        }
+    }
 
 }
