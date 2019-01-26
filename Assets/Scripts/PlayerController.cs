@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 			MoveHorizontal(Input.GetAxis("Horizontal")); //		
 			MoveVertical(Input.GetAxis("Vertical")); //
 		//}
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) <= 0.1 && Mathf.Abs(Input.GetAxis("Vertical")) <= 0.1)
         {
             anim.SetBool("Moving", false);
         }
@@ -55,21 +55,23 @@ public class PlayerController : MonoBehaviour
 		moveVel.x = input * speed * Time.deltaTime; //Set the new x velocity to be the given input times our speed
 		//Note the multiply by Time.deltaTime to compensate for game clock//
 		rb.velocity = moveVel;//Update our rigidbody's velocity
-        if (input > 0 && !(anim.GetBool("FaceRight")))
+        if (Mathf.Abs(input) > 0.01)
         {
-            anim.SetBool("FaceRight", true);
-            anim.SetBool("FaceLeft", false);
-            anim.SetBool("FaceUp", false);
-            anim.SetBool("FaceDown", false);
             anim.SetBool("Moving", true);
         }
-        else if (input < 0 && !(anim.GetBool("FaceLeft")))
+        if (input > 0)
         {
-            anim.SetBool("FaceLeft", true);
-            anim.SetBool("FaceRight", false);
             anim.SetBool("FaceUp", false);
             anim.SetBool("FaceDown", false);
-            anim.SetBool("Moving", true);
+            anim.SetBool("FaceRight", true);
+            anim.SetBool("FaceLeft", false);
+        }
+        else if (input < 0)
+        {
+            anim.SetBool("FaceUp", false);
+            anim.SetBool("FaceDown", false);
+            anim.SetBool("FaceLeft", true);
+            anim.SetBool("FaceRight", false);
         }
     }
 
@@ -79,21 +81,24 @@ public class PlayerController : MonoBehaviour
 		moveVel.y = input * speed * Time.deltaTime; //Set the new x velocity to be the given input times our speed
 		//Note the multiply by Time.deltaTime to compensate for game clock
 		rb.velocity = moveVel;//Update our rigidbody's velocity
-        if (input > 0 && !(anim.GetBool("FaceUp")))
+        if (Mathf.Abs(input) > 0.01)
         {
-            anim.SetBool("FaceUp", true);
-            anim.SetBool("FaceDown", false);
-            anim.SetBool("FaceLeft", false);
-            anim.SetBool("FaceRight", false);
             anim.SetBool("Moving", true);
         }
-        else if (input < 0 && !(anim.GetBool("FaceDown")))
+
+        if (input > 0)
         {
-            anim.SetBool("FaceDown", true);
-            anim.SetBool("FaceUp", false);
             anim.SetBool("FaceLeft", false);
             anim.SetBool("FaceRight", false);
-            anim.SetBool("Moving", true);
+            anim.SetBool("FaceUp", true);
+            anim.SetBool("FaceDown", false);
+        }
+        else if (input < 0)
+        {
+            anim.SetBool("FaceLeft", false);
+            anim.SetBool("FaceRight", false);
+            anim.SetBool("FaceDown", true);
+            anim.SetBool("FaceUp", false);
         }
     }
 
