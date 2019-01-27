@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.07487013, g: 0.08041606, b: 0.09150794, a: 1}
+  m_AmbientSkyColor: {r: 0.026343195, g: 0.029116161, b: 0.03188913, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -621,7 +621,7 @@ MonoBehaviour:
   textPane: {fileID: 840211109}
   primarySprite: {fileID: 21300054, guid: c2cb16770e3b55f4a97a5039fd17d75d, type: 3}
   secondarySprite: {fileID: 21300062, guid: c2cb16770e3b55f4a97a5039fd17d75d, type: 3}
-  dialogue: 
+  dialogue: This might help me see better...
 --- !u!1001 &400550453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1105,7 +1105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8bba2903deb1b941af7f96c6078c01f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent_light: {fileID: 0}
 --- !u!1 &1081975914
 GameObject:
   m_ObjectHideFlags: 0
