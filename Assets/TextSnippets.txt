@@ -1,0 +1,34 @@
+
+You wake up stiffly in a bed you don't recognize.
+You're all alone. But you don't remember coming here.
+
+You can't walk that far without your cane.
+NO CANE: Find your cane.
+
+The floor is cold under your feet. You shouldn't leave this rug without your slippers.
+NO SLIPPERS: Find your slippers.
+
+There's a note on the door. You can't read it without your glasses.
+NO GLASSES: Find your glasses.
+GLASSES: Don't wander off again. Do remember to eat. Be nice to your brother. --Charlotte
+
+You won't leave the warmth of this room without your sweater.
+NO SWEATER: Find your sweater.
+
+You find a piece of paper on the table. There's a note written on it.
+NO GLASSES: You can't quite make out the writing.
+GLASSES: I left a container of fruit slices in the fridge. You're welcome to it. --Leon
+
+NO GOAL: What do you need a pair of glasses for?
+GOAL: You put on your glasses. You should be able to read now.
+
+NO GOAL: It's plenty warm in here. You don't need your sweater.
+GOAL: You put on your sweater. This should keep you warm.
+
+NO GOAL: You're not going anywhere. No use dragging your cane around.
+GOAL: You grip your cane. This should help you get around.
+
+NO GOAL: This rug is quite comfortable, you shouldn't be needing your slippers.
+GOAL: You put on your sweaters. The floor shouldn't bother you any longer.
+
+
