@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1933610922025939756}
   - component: {fileID: 1933610922025939758}
   - component: {fileID: 1933610922025939757}
-  - component: {fileID: 1933610922025939759}
+  - component: {fileID: 840211109}
   m_Layer: 5
   m_Name: TextPane
   m_TagString: Untagged
@@ -108,7 +108,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &1933610922025939759
+--- !u!114 &840211109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f0c8c5577a0d04c81560d03baab590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textBox: {fileID: 1933610923870192971}
 --- !u!1 &1933610922983855343
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: 3}
+  m_AnchoredPosition: {x: 1, y: -4}
   m_SizeDelta: {x: 650, y: 250}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1933610923870192980
@@ -277,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36075616, g: 0.13656996, b: 0.8773585, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -297,4 +298,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This is the message box!\n :o\n!!!!!!!!!!!!!!!!!!!!!!!!!\nb\nc\nd\ne\nf\ng"
+  m_Text: 
