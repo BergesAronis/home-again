@@ -1,26 +1,20 @@
 ﻿using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class ShadowController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Get position of collided tile
-        var tilePos = collision.collider.transform.position;
-
-        // Fade colour of tile
-        Debug.Log("HIT");
-
+        if (other.tag == "Player")
+        {
+            var light = this.gameObject.GetComponent<Light>();
+            light.enabled = true;
+        }
     }
 }
