@@ -5,11 +5,15 @@ using UnityEngine;
 public class ItemInteractor : MonoBehaviour
 {
     public TextPane textPane;
+    public Sprite primarySprite;
+    public Sprite secondarySprite;
+
+    SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -28,5 +32,12 @@ public class ItemInteractor : MonoBehaviour
     void OnMouseOver()
     {
         // TODO: highlight item on mouseover -- may want to change this to some sort OnEnter()/OnLeave() pair to simplify computation
+        spriteRenderer.sprite = secondarySprite;
+    }
+
+    private void OnMouseExit()
+    {
+        spriteRenderer.sprite = primarySprite;
+
     }
 }

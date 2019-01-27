@@ -1,34 +1,39 @@
 
-You wake up stiffly in a bed you don't recognize.
-You're all alone. But you don't remember coming here.
+I wake up stiffly in a bed I don't recognize.
+I'm all alone. But I don't remember coming here.
 
-You can't walk that far without your cane.
+I can't walk that far without my cane.
 NO CANE: Find your cane.
 
-The floor is cold under your feet. You shouldn't leave this rug without your slippers.
+The floor is cold under my feet. I shouldn't leave this rug without my slippers.
 NO SLIPPERS: Find your slippers.
 
-There's a note on the door. You can't read it without your glasses.
+There's a note on the door. I can't read it without my glasses.
 NO GLASSES: Find your glasses.
-GLASSES: Don't wander off again. Do remember to eat. Be nice to your brother. --Charlotte
+GLASSES: Morgan, Don't wander off again. Do remember to eat. Be nice to your brother. --Charlotte
 
-You won't leave the warmth of this room without your sweater.
+I won't leave the warmth of this room without my sweater.
 NO SWEATER: Find your sweater.
 
-You find a piece of paper on the table. There's a note written on it.
-NO GLASSES: You can't quite make out the writing.
+I find a piece of paper on the table. There's a note written on it.
+NO GLASSES: I can't quite make out the writing.
 GLASSES: I left a container of fruit slices in the fridge. You're welcome to it. --Leon
 
-NO GOAL: What do you need a pair of glasses for?
-GOAL: You put on your glasses. You should be able to read now.
+NO GOAL: What do I need a pair of glasses for?
+GOAL: I put on my glasses. I should be able to read now.
 
-NO GOAL: It's plenty warm in here. You don't need your sweater.
-GOAL: You put on your sweater. This should keep you warm.
+NO GOAL: It's plenty warm in here. I don't need my sweater.
+GOAL: I put on my sweater. This should keep me warm.
 
-NO GOAL: You're not going anywhere. No use dragging your cane around.
-GOAL: You grip your cane. This should help you get around.
+NO GOAL: I'm not going anywhere. No use dragging my cane around.
+GOAL: I grip my cane. This should help me get around.
 
-NO GOAL: This rug is quite comfortable, you shouldn't be needing your slippers.
-GOAL: You put on your sweaters. The floor shouldn't bother you any longer.
+NO GOAL: This rug is quite comfortable, I shouldn't be needing my slippers.
+GOAL: I put on my slippers. The floor shouldn't bother me any longer.
+
+Looks like a strange wooden doll. I know it's mine.
+It feels very important to me.
+...I don't remember why.
+Remember the doll.
 
 
