@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
             stamina--;
             if (stamina <= 0)
             {
-                Debug.Log("NO MORE STAMINA");
+                Debug.Log("NO MORE STAMINA"); 
             }
         }
     }
