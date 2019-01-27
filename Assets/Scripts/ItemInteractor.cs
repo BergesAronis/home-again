@@ -27,7 +27,16 @@ public class ItemInteractor : MonoBehaviour
     {
         // TODO: add support for passing text through
         // TODO: add support for passing different text based on progress flags (maybe a struct? have flag options and text array to go with)
-        this.textPane.OpenPane(dialogue);
+        if (this.textPane.open)
+        {
+            this.textPane.ClosePane();
+
+        }
+        else
+        {
+            this.textPane.OpenPane(dialogue);
+        }
+
     }
 
     void OnMouseOver()
@@ -41,4 +50,5 @@ public class ItemInteractor : MonoBehaviour
         spriteRenderer.sprite = primarySprite;
 
     }
+
 }
