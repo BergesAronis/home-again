@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 	public float maxStamina = 1000;
     public float stamina = 1000;
 	public GameObject respawn;
+    public HealthBar healthbar;
 
 	// MonoBehaviour object components
 	Rigidbody2D rb;
@@ -59,6 +60,7 @@ public class PlayerController : MonoBehaviour
 				this.gameObject.transform.position = respawn.transform.position;
 				//int count = all_lights.Length;
 				stamina = maxStamina;
+                
 
 				foreach (var child in all_lights)
 				{
