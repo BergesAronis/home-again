@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6259702220046730721}
   - component: {fileID: 1613641087}
   - component: {fileID: 1613641082}
+  - component: {fileID: 9087060104913614155}
+  - component: {fileID: 1630801950216976854}
   m_Layer: 0
   m_Name: Interactive Item
   m_TagString: Untagged
@@ -93,8 +95,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15ab1053448328645b4ae0f4efb74bfb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   textPane: {fileID: 0}
   primarySprite: {fileID: 21300038, guid: c2cb16770e3b55f4a97a5039fd17d75d, type: 3}
   secondarySprite: {fileID: 21300056, guid: c2cb16770e3b55f4a97a5039fd17d75d, type: 3}
@@ -109,8 +111,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1613641087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,6 +149,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  textPane: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &9087060104913614155
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6831217655117455722}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.43}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: -6}
+    oldSize: {x: 0.16, y: 0.22}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.22000003}
+  m_EdgeRadius: 0
+--- !u!114 &1630801950216976854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6831217655117455722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
