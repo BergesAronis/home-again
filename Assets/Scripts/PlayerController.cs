@@ -15,14 +15,16 @@ public class PlayerController : MonoBehaviour
 	CircleCollider2D cc;
 	SpriteRenderer sr;
 	Animator anim;
+    AudioSource walkingSound;
 
 
-	void Awake()
+    void Awake()
 	{
 		// Get references to our components
 		rb = GetComponent<Rigidbody2D>();
 		cc = GetComponent<CircleCollider2D>();
 		anim = GetComponent<Animator>();
+        walkingSound = GetComponent<AudioSource>();
 	}
 
     // Start is called before the first frame update
@@ -46,6 +48,7 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(Input.GetAxis("Horizontal")) <= 0.1 && Mathf.Abs(Input.GetAxis("Vertical")) <= 0.1)
         {
             anim.SetBool("Moving", false);
+            walkingSound.Stop();
         }
     }
 
