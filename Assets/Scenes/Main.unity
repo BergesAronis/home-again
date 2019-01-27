@@ -556,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382264907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.745, y: 1.155, z: 0}
+  m_LocalPosition: {x: 2.745, y: 1.155, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1667,7 +1667,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e9d39ba26782d3d45bfcdd3b8b7cba4c, type: 2}
+      objectReference: {fileID: 2100000, guid: b1e42c6b6574066489b5a5cd898f5350, type: 2}
     - target: {fileID: 212126808338469788, guid: 51c11e7245f136a46a9e7d966939d5be,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1944,7 +1944,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -2001,7 +2001,7 @@ PrefabInstance:
     - target: {fileID: 6831217655117455720, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6831217655117455720, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
