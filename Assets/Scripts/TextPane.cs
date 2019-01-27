@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TextPane : MonoBehaviour
 {
     private float startTime;
     private bool canContinue;
+    public Text textBox;
+
 
     private float continueDelay = 0.5f;
 
@@ -26,23 +29,22 @@ public class TextPane : MonoBehaviour
 
     void OnMouseDown()
     {
-        // TODO: add ability to cycle through multiple dialogue panes (instead of just 1) before closing
-        if (this.canContinue)
-        {
-            this.ClosePane();
-        }
+        this.ClosePane();
     }
 
-    public void OpenPane()
+    public void OpenPane(string text)
     {
         // TODO: add ability to pass text through for display
         this.startTime = Time.time;
         this.canContinue = false;
         this.gameObject.SetActive(true);
+        textBox.text = text;
+        
     }
 
     public void ClosePane()
     {
         this.gameObject.SetActive(false);
+        Debug.Log("closed");
     }
 }
