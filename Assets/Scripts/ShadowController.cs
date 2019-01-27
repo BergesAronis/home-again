@@ -20,7 +20,7 @@ public class ShadowController : MonoBehaviour
         var tilePos = collision.collider.transform.position;
 
         // Fade colour of tile
-        
+        Debug.Log("HIT");
 
     }
 }

@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 	public float speed = 10.0f; //Speed of the player
 	public float stutter = 1.0f; //Failure rate of movement entry
 	public float gravityScale = 0;
+    public float stamina = 100;
 
 	// MonoBehaviour object components
 	Rigidbody2D rb;
@@ -37,18 +38,25 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		// Turn off gravity
-		rb.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+        // Turn off gravity
+        rb.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 
-		//if (stutter >= Random.Range(0.0f, 1.0f)) // TODO: failing due to age or something?
-		//{
-			MoveHorizontal(Input.GetAxis("Horizontal")); //		
-			MoveVertical(Input.GetAxis("Vertical")); //
-		//}
+
+        MoveHorizontal(Input.GetAxis("Horizontal")); //		
+        MoveVertical(Input.GetAxis("Vertical")); //
+
         if (Mathf.Abs(Input.GetAxis("Horizontal")) <= 0.1 && Mathf.Abs(Input.GetAxis("Vertical")) <= 0.1)
         {
             anim.SetBool("Moving", false);
             walkingSound.Stop();
+        }
+        if (anim.GetBool("Moving"))
+        {
+            stamina--;
+            if (stamina <= 0)
+            {
+                Debug.Log("NO MORE STAMINA");
+            }
         }
     }
 
@@ -61,6 +69,10 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(input) > 0.01)
         {
             anim.SetBool("Moving", true);
+            if (!walkingSound.isPlaying)
+            {
+                walkingSound.Play();
+            }
         }
         if (input > 0)
         {
@@ -87,6 +99,10 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(input) > 0.01)
         {
             anim.SetBool("Moving", true);
+            if (!walkingSound.isPlaying)
+            {
+                walkingSound.Play();
+            }
         }
 
         if (input > 0)
