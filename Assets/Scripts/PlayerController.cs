@@ -6,7 +6,9 @@ public class PlayerController : MonoBehaviour
 	public float speed = 10.0f; //Speed of the player
 	public float stutter = 1.0f; //Failure rate of movement entry
 	public float gravityScale = 0;
-    public float stamina = 100;
+	public float maxStamina = 1000;
+    public float stamina = 1000;
+	public GameObject respawn;
 
 	// MonoBehaviour object components
 	Rigidbody2D rb;
@@ -52,8 +54,21 @@ public class PlayerController : MonoBehaviour
             stamina--;
             if (stamina <= 0)
             {
-                Debug.Log("NO MORE STAMINA"); 
-            }
+                Debug.Log("NO MORE STAMINA");
+				var all_lights = GameObject.FindGameObjectsWithTag("Light");
+				this.gameObject.transform.position = respawn.transform.position;
+				//int count = all_lights.Length;
+				stamina = maxStamina;
+
+				foreach (var child in all_lights)
+				{
+
+					if (child.gameObject.GetComponent<Light>().enabled == true && (Random.value >= 0.5))
+					{
+						child.gameObject.GetComponent<Light>().enabled = false;
+					}
+				}
+			}
         }
     }
 
