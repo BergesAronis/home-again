@@ -154,7 +154,7 @@ Transform:
   m_Children:
   - {fileID: 1567064224}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &39510005
 GameObject:
@@ -411,7 +411,7 @@ PrefabInstance:
     - target: {fileID: 1933610922983855336, guid: 364bb13a42bb28a4aab221afd1be4faa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1933610922983855336, guid: 364bb13a42bb28a4aab221afd1be4faa,
         type: 3}
@@ -477,6 +477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933610923870192971, guid: 364bb13a42bb28a4aab221afd1be4faa,
+        type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 364bb13a42bb28a4aab221afd1be4faa, type: 3}
@@ -556,7 +561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382264907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.761, y: 0.958, z: -6}
+  m_LocalPosition: {x: 2.761, y: 0.958, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -572,8 +577,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &382264911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -610,11 +615,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15ab1053448328645b4ae0f4efb74bfb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   textPane: {fileID: 981359043}
   primarySprite: {fileID: 21300054, guid: c2cb16770e3b55f4a97a5039fd17d75d, type: 3}
   secondarySprite: {fileID: 21300062, guid: c2cb16770e3b55f4a97a5039fd17d75d, type: 3}
+  dialogue: This might help me see
 --- !u!1001 &400550453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,8 +786,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &631438258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6372483188489702961, guid: 9c767a737c004694d86f1047105b639f,
@@ -948,8 +954,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9f0c8c5577a0d04c81560d03baab590, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 0}
 --- !u!4 &890519824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6372483188489702961, guid: 9c767a737c004694d86f1047105b639f,
@@ -1046,8 +1053,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &947069612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,8 +1108,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9f0c8c5577a0d04c81560d03baab590, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1081975914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,8 +1200,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1086675938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,8 +1294,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1086675942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1525,8 +1532,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1269128852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1684,7 +1691,7 @@ PrefabInstance:
     - target: {fileID: 212126808338469788, guid: 51c11e7245f136a46a9e7d966939d5be,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: b1e42c6b6574066489b5a5cd898f5350, type: 2}
     - target: {fileID: 212126808338469788, guid: 51c11e7245f136a46a9e7d966939d5be,
         type: 3}
@@ -2044,7 +2051,7 @@ PrefabInstance:
     - target: {fileID: 6831217655117455720, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6831217655117455720, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
@@ -2094,7 +2101,7 @@ PrefabInstance:
     - target: {fileID: 6831217655117455721, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
       propertyPath: m_Sprite
-      value:
+      value: 
       objectReference: {fileID: 21300038, guid: c2cb16770e3b55f4a97a5039fd17d75d,
         type: 3}
     - target: {fileID: 6831217655117455721, guid: 6a56cebdb0347e94c80f48a8181ba877,
@@ -2115,7 +2122,7 @@ PrefabInstance:
     - target: {fileID: 6831217655117455721, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: e9d39ba26782d3d45bfcdd3b8b7cba4c, type: 2}
     - target: {fileID: 6831217655117455718, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
@@ -2140,18 +2147,18 @@ PrefabInstance:
     - target: {fileID: 6831217655117455717, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
       propertyPath: textPane
-      value:
+      value: 
       objectReference: {fileID: 981359043}
     - target: {fileID: 6831217655117455717, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
       propertyPath: primarySprite
-      value:
+      value: 
       objectReference: {fileID: 21300038, guid: c2cb16770e3b55f4a97a5039fd17d75d,
         type: 3}
     - target: {fileID: 6831217655117455717, guid: 6a56cebdb0347e94c80f48a8181ba877,
         type: 3}
       propertyPath: secondarySprite
-      value:
+      value: 
       objectReference: {fileID: 21300056, guid: c2cb16770e3b55f4a97a5039fd17d75d,
         type: 3}
     m_RemovedComponents: []
@@ -2754,8 +2761,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1613641087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2872,8 +2879,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1827008352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3034,8 +3041,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1922469710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3308,8 +3315,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4365fc4a53dcb0b43b43543f9b0750fc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2105533228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6372483188489702961, guid: 9c767a737c004694d86f1047105b639f,

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1933610922025939756}
   - component: {fileID: 1933610922025939758}
   - component: {fileID: 1933610922025939757}
-  - component: {fileID: 1933610922025939759}
   m_Layer: 5
   m_Name: TextPane
   m_TagString: Untagged
@@ -108,18 +107,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &1933610922025939759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933610922025939747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f0c8c5577a0d04c81560d03baab590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1933610922983855343
 GameObject:
   m_ObjectHideFlags: 0
